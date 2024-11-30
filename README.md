@@ -28,12 +28,12 @@ This project implements the 'Quantum Signal Processing' and the 'Quantum Eigenva
 To execute the programm use:
 ```
 $ main.py
-´´´
+```
 
 To execute the tests use: 
 ```
 $ test.py
-´´´
+```
 
 ## Preferences
 This implemetation is based on the paper 'Grand Unification of Quantum Algorithms" and was made as part of the course 'Seminar: Advanced Topics of Quantum Computing (IN2107,IN2183,IN0014)' at Technische Universität München. 
