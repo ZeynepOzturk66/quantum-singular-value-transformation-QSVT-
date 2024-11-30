@@ -1,13 +1,21 @@
 import numpy as np
 
-def quantumSignalProcessing(A, t):
-    return 0
+def signalRotationOp(a): 
+    #for a value a = [-1, 1]
+    sqrt = np.sqrt(1-np.square(a))
+    matrix = np.array([[a, 1j*sqrt], [1j*sqrt, a]])
+    return matrix
 
-def signalRotationOp(): 
-    return 0
+def signalProcessingRotationOp(phi): 
+    # for a value phi = [0, 2pi]
+    matrix =  np.array([[np.exp(1j * phi), 0], [0, np.exp(1j * -phi)]])
+    return matrix
 
-def signalProcessingRotationOp(): 
-    return 0
-
-def main():
-    quantumSignalProcessing(np.array([[1, 2], [3, 4]]), 2)
+def quantumSignalProcessing(phi_vec, a):
+    w = signalRotationOp(a)
+    res = signalProcessingRotationOp(phi_vec[0])
+    for i in range(1, len(phi_vec)):
+        res = res @ w @ signalProcessingRotationOp(phi_vec[i])
+    # @ -> Matrixmultiplication    
+    print("Quantum signal processing: \n", res)    
+    return res

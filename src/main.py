@@ -7,13 +7,15 @@ def main():
           "2. Quantum Signal Processing")
     
     choice = input("Enter your choice (1/2): ")
+
+    #help option
     
     if choice == "1":
         print("Running Quantum Eigenvalue Transform...")
-        QET.main() 
+        QET.quantumEigenvalueTransform
     elif choice == "2":
         print("Running Quantum Signal Processing...")
-        QSP.main() 
+        QSP.quantumSignalProcessing 
     else:
         print("Invalid choice. Exiting.")
 
