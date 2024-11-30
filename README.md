@@ -23,7 +23,7 @@ where Poly(𝐻) has an analogous interpretation.
 -> implement unitary matrix
 TODO 
 
-##Usage
+## Usage
 This project implements the 'Quantum Signal Processing' and the 'Quantum Eigenvalue Transforms'.
 To execute the programm use:
 ```
