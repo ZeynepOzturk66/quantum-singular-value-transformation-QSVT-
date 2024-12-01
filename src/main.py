@@ -12,10 +12,12 @@ def main():
     
     if choice == "1":
         print("Running Quantum Eigenvalue Transform...")
-        QET.quantumEigenvalueTransform
+        #still need to implement input
+        QET.quantumEigenvalueTransform()
     elif choice == "2":
         print("Running Quantum Signal Processing...")
-        QSP.quantumSignalProcessing 
+        #still need to implement input
+        QSP.quantumSignalProcessing([0, 1], 1) 
     else:
         print("Invalid choice. Exiting.")
 

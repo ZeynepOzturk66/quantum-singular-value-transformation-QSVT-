@@ -8,7 +8,7 @@ This project presents how quantum signal processing may be generalized to quantu
 The quantum signal processing is build on interleaving two kinds of single-qubit rotations: a signal rotation operator and a signal processing rotation. 
 The signal rotation, commenly known as a X rotation through the Bloch sphere, always rotates through the same angle θ and the signal processing rotation, commenly know as a Z rotation through the Bloch sphere, rotates through a variable angle according to some predetermined sequence. 
 
-### Quantum eigenvalue transforms 
+### Quantum eigenvalue transforms (QEVT)
 polynamial transform can actually be performed over an entire vector space
 -> polynomially transfoms all the eigenvalues of a Hamiltionian H that has been embedded into a block of a unitary matrix U. 
 Given a block encoding of Hamiltonian 𝐻 H:
