@@ -17,13 +17,13 @@ To execute the programm use:
 $ python3 main.py 
 ```
 
-Different variant names:
+Variant names:
 - block encoding
 - projector controlles phase shift operator
 - quantum eigenvalue transformation
 - signal rotation operation
-- for signal processing rotation operator
-- for quantum signal processing
+- signal processing rotation operator
+- quantum signal processing
 
 ## Presentation 
 The presentation 'QSVT_presentation.pdf' was created for the course 'Seminar: Advanced Topics in Quantum Computing (IN2107, IN2183, IN0014)' and covers the theoretical concepts behind this implementation.
