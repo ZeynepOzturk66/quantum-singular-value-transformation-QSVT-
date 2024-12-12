@@ -9,7 +9,6 @@ def SRO(a):
 
     Raises:
         ValueError: If a is not between -1 and 1.
-        TypeError: If a is not a number.
     '''
     if a < -1 or a > 1:
         raise ValueError("The value of 'a' must be between -1 and 1.")

@@ -14,21 +14,16 @@ Quantum eigenvalue transformation extends polynomial transformations to eigenval
 This project implements the 'quantum signal processing' and the 'quantum eigenvalue transformation'.
 To execute the programm use:
 ```
-$ python3 main.py --variant <Variant Name> --argument <Input Arguments in JSON Format>
+$ python3 main.py 
 ```
 
 Different variant names:
-- 'BEC' for block encoding
-- 'CPS' for projector controlles phase shift operator
-- 'QEVT' for quantum eigenvalue transformation
-- 'SRO' for signal rotation operation
-- 'SPRO' for signal processing rotation operator
-- 'QSP' for quantum signal processing
-
-Example for an input:
-```
-$ python3 main.py --variant \"BEC\" --argument \"[[[1, 0], [0, -1]]]\"
-```
+- block encoding
+- projector controlles phase shift operator
+- quantum eigenvalue transformation
+- signal rotation operation
+- for signal processing rotation operator
+- for quantum signal processing
 
 ## Presentation 
 The presentation 'QSVT_presentation.pdf' was created for the course 'Seminar: Advanced Topics in Quantum Computing (IN2107, IN2183, IN0014)' and covers the theoretical concepts behind this implementation.
