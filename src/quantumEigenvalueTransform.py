@@ -39,9 +39,7 @@ def projectorControlledPhaseShift(phi, proj):
     Returns:
         numpy.ndarray: The resulting unitary matrix representing the operation.
     '''
-    if not np.allclose(proj @ proj, proj, atol=1e-10):
-        raise ValueError("Input matrix is not a valid projector.")
-    
+    ex.PCPS(phi, proj)
     I = np.eye(proj.shape[0])       
     U = expm(1j * phi * (2 * proj - I))
     return U
@@ -58,6 +56,7 @@ def quantumEigenvalueTransform(A, phi_vec):
     Returns:
         numpy.ndarray: The resulting matrix after applying the quantum eigenvalue transformation.
     '''
+    ex.QEV(phi_vec, A)
     U = blockEncoding(A)
     P = np.kron(np.array([[1, 0], [0, 0]]), np.eye(len(U) // 2))
     res = projectorControlledPhaseShift(phi_vec[0], P)
