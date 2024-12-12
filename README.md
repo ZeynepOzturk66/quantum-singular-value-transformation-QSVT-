@@ -1,9 +1,9 @@
 # Quantum singular value transformation (QSVT)
 
-Quantum Singular Value Transformation is a mathematical framework for developing quantum algorithms, such as the Hamiltonian simulation algorithm. It performs a polynomial transformation of the singular values of a linear operator embedded in a unitary matrix. This framework is built on two foundational concepts: Quantum Signal Processing (QSP) and Quantum Eigenvalue Transformation (QEVT).
+Quantum singular value transformation is a mathematical framework for developing quantum algorithms, such as the Hamiltonian simulation algorithm. It performs a polynomial transformation of the singular values of a linear operator embedded in a unitary matrix. This framework is built on two foundational concepts: Quantum Signal Processing (QSP) and Quantum Eigenvalue Transformation (QEVT).
 
 ### Quantum signal processing (QSP)
-Quantum Signal Processing relies on interleaving two kinds of single-qubit rotations:
+Quantum signal processing relies on interleaving two kinds of single-qubit rotations:
 - Signal Rotation Operator: This is commonly referred to as an X-rotation through the Bloch sphere. It always rotates through a fixed angle θ.
 - Signal Processing Rotation: This is commonly referred to as a Z-rotation through the Bloch sphere. It rotates through a variable angle determined by a predetermined sequence.
 
@@ -11,7 +11,7 @@ Quantum Signal Processing relies on interleaving two kinds of single-qubit rotat
 Quantum eigenvalue transformation extends polynomial transformations to eigenvalues of a Hamiltonian 𝐻 encoded in a unitary matrix 𝑈. Using block encoding and controlled phase shifts, QEVT applies polynomial transformations of a degree 𝑑 to 𝐻, enabling advanced quantum computations.
 
 ## Usage
-This project implements the 'Quantum Signal Processing' and the 'Quantum Eigenvalue Transformation'.
+This project implements the 'quantum signal processing' and the 'quantum eigenvalue transformation'.
 To execute the programm use:
 ```
 $ python3 main.py --variant <Variant Name> --argument <Input Arguments in JSON Format>
@@ -25,7 +25,7 @@ Different variant names:
 - 'SPRO' for signal processing rotation operator
 - 'QSP' for quantum signal processing
 
-Example for block encoding:
+Example for an input:
 ```
 $ python3 main.py --variant \"BEC\" --argument \"[[[1, 0], [0, -1]]]\"
 ```
