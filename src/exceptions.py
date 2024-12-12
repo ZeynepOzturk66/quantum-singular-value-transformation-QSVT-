@@ -39,10 +39,9 @@ def BEC(A):
     Raises:
         AssertionError: If A is not square or its spectral norm is greater than 1.
     '''
-    # Check if A is square
     if not A.shape[0] == A.shape[1]:
         raise AssertionError("A must be a square matrix.")
     
-    # Check if the spectral norm of A is <= 1
-    if np.linalg.norm(A, ord=2) > 1:  # Spectral norm
+    if np.linalg.norm(A, ord=2) > 1: 
         raise AssertionError("The spectral norm of A must be <= 1.")
+

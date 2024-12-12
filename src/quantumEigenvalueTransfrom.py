@@ -64,3 +64,4 @@ def quantumEigenvalueTransform(A, phi_vec):
     for i in range(1, len(phi_vec)):
         res = res @ U @ projectorControlledPhaseShift(phi_vec[i], P)
     return res
+
