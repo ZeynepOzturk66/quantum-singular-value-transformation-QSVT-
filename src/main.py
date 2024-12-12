@@ -1,4 +1,4 @@
-import quantumEigenvalueTransfrom as QET
+import quantumEigenvalueTransform as QET
 import quantumSignalProcessing as QSP
 
 def main(): 

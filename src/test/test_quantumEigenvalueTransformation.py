@@ -1,8 +1,8 @@
 import unittest as ut
 
-from quantumEigenvalueTransfrom import quantumEigenvalueTransform as QEVT
-from quantumEigenvalueTransfrom import blockEncoding as BE
-from quantumEigenvalueTransfrom import projectorControlledPhaseShift as PCS
+from quantumEigenvalueTransform import quantumEigenvalueTransform as QEVT
+from quantumEigenvalueTransform import blockEncoding as BE
+from quantumEigenvalueTransform import projectorControlledPhaseShift as PCS
 
 class test(ut.TestCase): 
     def test_quantumEigenvalueTransform(self):
