@@ -1,7 +1,7 @@
 import numpy as np
 import exceptions as ex
  
-def signalRotationOp(a): 
+def signalRotationOp(a: float): 
     '''
     For an input a = [-1, 1] this function computates the z rotation in the bloch sphere
     by an angle theta = -2 * arccos(a). 
@@ -17,7 +17,7 @@ def signalRotationOp(a):
     matrix = np.array([[a, 1j*sqrt], [1j*sqrt, a]])
     return matrix
 
-def signalProcessingRotationOp(phi): 
+def signalProcessingRotationOp(phi: float): 
     '''
     With the input phi, this function computes the z rotation in the bloch sphere 
     by an angle theta = -2 * phi.
@@ -32,7 +32,7 @@ def signalProcessingRotationOp(phi):
     matrix = np.array([[np.exp(1j * phi), 0], [0, np.exp(1j * -phi)]])
     return matrix
 
-def quantumSignalProcessing(phi_vec, a):
+def quantumSignalProcessing(phi_vec: list, a: float):
     '''
     Transforms a scalar value `a` into a polynomial function using unitary operations.
     

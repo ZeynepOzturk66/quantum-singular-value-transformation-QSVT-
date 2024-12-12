@@ -3,7 +3,7 @@ import exceptions as ex
 from scipy.linalg import sqrtm
 from scipy.linalg import expm
 
-def blockEncoding(A):
+def blockEncoding(A: np.ndarray):
     '''
     Constructs the block-encoding matrix U for a given matrix A.
 
@@ -28,7 +28,7 @@ def blockEncoding(A):
         "The block encoding matrix U is not unitary. Check matrix A."
     return U
 
-def projectorControlledPhaseShift(phi, proj):
+def projectorControlledPhaseShift(phi: float, proj: np.ndarray):
     '''
     Implements the projector-controlled phase-shift operation.
 
@@ -44,7 +44,7 @@ def projectorControlledPhaseShift(phi, proj):
     U = expm(1j * phi * (2 * proj - I))
     return U
 
-def quantumEigenvalueTransform(A, phi_vec):
+def quantumEigenvalueTransform(A: np.ndarray, phi_vec: list):
     '''
     Applies a quantum eigenvalue transformation on a given matrix A by first constructing
     its block encoding and then applying the transformation.

@@ -11,8 +11,6 @@ def SRO(a):
         ValueError: If a is not between -1 and 1.
         TypeError: If a is not a number.
     '''
-    if not isinstance(a, (int, float)):
-        raise TypeError("The value of 'a' must be a number.")
     if a < -1 or a > 1:
         raise ValueError("The value of 'a' must be between -1 and 1.")
 
@@ -54,13 +52,8 @@ def PCPS(phi, proj):
         proj (numpy.ndarray): The projector matrix (must satisfy proj^2 = proj).
 
     Raises:
-        TypeError: If phi is not a number or proj is not a numpy array.
         ValueError: If proj is not a valid projector or proj is not square.
     '''
-    if not isinstance(phi, (int, float)):
-        raise TypeError("The value of `phi` must be a number.")
-    if not isinstance(proj, np.ndarray):
-        raise TypeError("The projector must be a numpy array.")
     if proj.shape[0] != proj.shape[1]:
         raise ValueError("The projector must be a square matrix.")
     if not np.allclose(proj @ proj, proj, atol=1e-10):
@@ -75,16 +68,8 @@ def QEV(phi_vec, proj):
         proj (numpy.ndarray): Input projector matrix.
 
     Raises:
-        TypeError: If phi_vec is not a list or numpy array, or if elements in phi_vec are not numbers.
         ValueError: If proj is not a valid projector or is not square.
     '''
-    if not isinstance(phi_vec, (list, np.ndarray)):
-        raise TypeError("The value of `phi_vec` must be a list or numpy array.")
-    if not all(isinstance(phi, (int, float)) for phi in phi_vec):
-        raise TypeError("All elements in `phi_vec` must be numbers.")
-    
-    if not isinstance(proj, np.ndarray):
-        raise TypeError("The projector must be a numpy array.")
     if proj.shape[0] != proj.shape[1]:
         raise ValueError("The projector must be a square matrix.")
     if not np.allclose(proj @ proj, proj, atol=1e-10):
