@@ -4,8 +4,8 @@ Quantum singular value transformation is a mathematical framework for developing
 
 ### Quantum signal processing (QSP)
 Quantum signal processing relies on interleaving two kinds of single-qubit rotations:
-- Signal Rotation Operator: This is commonly referred to as an X-rotation through the Bloch sphere. It always rotates through a fixed angle θ.
-- Signal Processing Rotation: This is commonly referred to as a Z-rotation through the Bloch sphere. It rotates through a variable angle determined by a predetermined sequence.
+- signal rotation operator: This is commonly referred to as an X-rotation through the Bloch sphere. It always rotates through a fixed angle θ.
+- signal processing rotation: This is commonly referred to as a Z-rotation through the Bloch sphere. It rotates through a variable angle determined by a predetermined sequence.
 
 ### Quantum eigenvalue transformation (QEVT)
 Quantum eigenvalue transformation extends polynomial transformations to eigenvalues of a Hamiltonian 𝐻 encoded in a unitary matrix 𝑈. Using block encoding and controlled phase shifts, QEVT applies polynomial transformations of a degree 𝑑 to 𝐻, enabling advanced quantum computations.
