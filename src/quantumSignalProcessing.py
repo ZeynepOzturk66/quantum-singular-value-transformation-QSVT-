@@ -55,3 +55,4 @@ def quantumSignalProcessing(phi_vec, a):
     for i in range(1, len(phi_vec)):
         res = res @ SRO @ signalProcessingRotationOp(phi_vec[i])
     return res
+
