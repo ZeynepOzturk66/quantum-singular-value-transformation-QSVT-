@@ -1,43 +1,37 @@
 # Quantum singular value transformation (QSVT)
 
-The Quantum singular value transformation is a novel technique that tieds together a number of quantum algorthims such as the quantum seach, quantum phase estimation and the Hamiltonian simulation. It performs a polynomial transformation of the singular values of a linear operator embedded in a unitary matrix. 
+Quantum Singular Value Transformation is a mathematical framework for developing quantum algorithms, such as the Hamiltonian simulation algorithm. It performs a polynomial transformation of the singular values of a linear operator embedded in a unitary matrix. This framework is built on two foundational concepts: Quantum Signal Processing (QSP) and Quantum Eigenvalue Transformation (QEVT).
 
-This project presents how quantum signal processing may be generalized to quantum eigenvalue transformation, from which the QSVT emerges. It is primarely based on the Grand Unification paper. 
+#### Quantum signal processing (QSP)
+Quantum Signal Processing relies on interleaving two kinds of single-qubit rotations:
+1. Signal Rotation Operator: This is commonly referred to as an X-rotation through the Bloch sphere. It always rotates through a fixed angle θ.
+2. Signal Processing Rotation: This is commonly referred to as a Z-rotation through the Bloch sphere. It rotates through a variable angle determined by a predetermined sequence.
 
-### Quantum signal processing (QSP)
-The quantum signal processing is build on interleaving two kinds of single-qubit rotations: a signal rotation operator and a signal processing rotation. 
-The signal rotation, commenly known as a X rotation through the Bloch sphere, always rotates through the same angle θ and the signal processing rotation, commenly know as a Z rotation through the Bloch sphere, rotates through a variable angle according to some predetermined sequence. 
-
-### Quantum eigenvalue transforms (QEVT)
-polynamial transform can actually be performed over an entire vector space
--> polynomially transfoms all the eigenvalues of a Hamiltionian H that has been embedded into a block of a unitary matrix U. 
-Given a block encoding of Hamiltonian 𝐻 H:
-in a unitary matrix 𝑈 U:
-with the location of 𝐻 H determined by the projector and given the ability to perform controlled-NOT operations to realize projector-controlled phase-shift operations 𝜙, then for even d:
-where
-is a polynomial transform of the eigenvalues of 𝐻. The polynomial is of degree at most d and obeys the conditions on P from Theorem 1.
-Similarly, for odd d:
-where Poly(𝐻) has an analogous interpretation.
-
--> test unitary matrix
--> implement unitary matrix
-TODO 
+#### Quantum eigenvalue transformation (QEVT)
+Quantum eigenvalue transformation extends polynomial transformations to eigenvalues of a Hamiltonian 𝐻 encoded in a unitary matrix 𝑈. Using block encoding and controlled phase shifts, QEVT applies polynomial transformations of a degree 𝑑 to 𝐻, enabling advanced quantum computations.
 
 ## Usage
-This project implements the 'Quantum Signal Processing' and the 'Quantum Eigenvalue Transforms'.
+This project implements the 'Quantum Signal Processing' and the 'Quantum Eigenvalue Transformation'.
 To execute the programm use:
 ```
-$ main.py
+$ python3 main.py --variant <Variant Name> --argument <Input Arguments in JSON Format>
 ```
 
-To execute the tests use: 
+Different variant names:
+- 'BEC' for block encoding
+- 'CPS' for projector controlles phase shift operator
+- 'QEVT' for quantum eigenevalue transformation
+- 'SRO' for signal rotation operation
+- 'SPRO' for signal processing rotation operator
+- 'QSP' for quantum signal processing
+
+Example for block encoding:
 ```
-$ test.py
+$ python3 main.py --variant \"BEC\" --argument \"[[[1, 0], [0, -1]]]\"
 ```
 
 ## Presentation 
-This presentation was made in the ...
-Since it is a pdf document, you need to install a pdf reader. 
+The presentation 'QSVT_presentation.pdf' was made for the course 'Seminar: Advanced Topics of Quantum Computing (IN2107,IN2183,IN0014)' and includes the main concepts of this implemenation. 
 
 ## Preferences
 This implemetation is based on the paper 'Grand Unification of Quantum Algorithms" and was made as part of the course 'Seminar: Advanced Topics of Quantum Computing (IN2107,IN2183,IN0014)' at Technische Universität München. 
