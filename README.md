@@ -35,5 +35,9 @@ To execute the tests use:
 $ test.py
 ```
 
+## Presentation 
+This presentation was made in the ...
+Since it is a pdf document, you need to install a pdf reader. 
+
 ## Preferences
 This implemetation is based on the paper 'Grand Unification of Quantum Algorithms" and was made as part of the course 'Seminar: Advanced Topics of Quantum Computing (IN2107,IN2183,IN0014)' at Technische Universität München. 
