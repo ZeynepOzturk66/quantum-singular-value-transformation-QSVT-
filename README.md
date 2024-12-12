@@ -34,5 +34,5 @@ $ python3 main.py --variant \"BEC\" --argument \"[[[1, 0], [0, -1]]]\"
 The presentation 'QSVT_presentation.pdf' was created for the course 'Seminar: Advanced Topics in Quantum Computing (IN2107, IN2183, IN0014)' and covers the theoretical concepts behind this implementation.
 
 ## Preferences
-This implementation is based on the paper 'Grand Unification of Quantum Algorithms" and was made as part of the course 'Seminar: Advanced Topics of Quantum Computing (IN2107,IN2183,IN0014)' at Technische Universität München. 
+This implementation is based on the paper '[Grand Unification of Quantum Algorithms](https://journals.aps.org/prxquantum/abstract/10.1103/PRXQuantum.2.040203)' and was made as part of the course 'Seminar: Advanced Topics of Quantum Computing (IN2107,IN2183,IN0014)' at Technische Universität München. 
 
